@@ -1,7 +1,4 @@
-from collections import OrderedDict
 from lib.Request import Reddit
-from nsfw import classify
-from PIL import Image
 import requests
 
 def download_memes() -> None:
