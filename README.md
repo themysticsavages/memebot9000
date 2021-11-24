@@ -27,7 +27,7 @@ I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that doesn't
 
 This is pretty much how the whole thing will work.
 
-## Installation
+## Usage
 Clone the repo:
 ```bash
 git clone https://github.com/themysticsavages/memebot9000.git
@@ -42,4 +42,5 @@ And required pip packages:
 ```bash
 python3 -m pip install -r requirements.txt
 ```
-🤷 I don't know what to do next.
+
+Then, create a Google Cloud app instance with the YouTube Data API v3 libary added.
