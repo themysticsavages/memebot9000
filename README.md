@@ -2,6 +2,10 @@
 An active meme bot on YouTube which uploads random memes based on internet knowledge. <br>
 I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that doesn't get as random.
 
+Example video:
+
+<a href="https://www.youtube.com/watch?v=n-1HtN4IPiE" target="blank"><img src="https://i.ytimg.com/vi/n-1HtN4IPiE/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBG5aFk-WA9YvtNYbdzMdfmXJg_qA"></a>
+
 ## How it works
 - Choose between making a meme compilation or a meme edit of a popular video (sh*tpost), or just a sound effect with effects.
   - Traditional meme compilation
