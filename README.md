@@ -4,7 +4,7 @@ I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that doesn't
 
 ## How it works
 - Choose between making a meme compilation or a meme edit of a popular video (sh*tpost), or just a sound effect with effects.
-  - Tradition meme compilation
+  - Traditional meme compilation
     - Take trending memes from the r/memes subreddit on Reddit
     - Download all attachments that are images or videos
     - Scan OCR on images and the first frame of a video
@@ -17,7 +17,7 @@ I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that doesn't
       - `bruh`
       - `vine boom bass boosted`
       - `...` 
-  - Popular sound with effects]
+  - Popular sound with effects
     - Take any sound effect from the YouTube channel "Gaming Sound FX"
     - Add any of the following effects:
       - `bass`
