@@ -1,5 +1,5 @@
 from googleapiclient.http import MediaFileUpload
-from Google import Create_Service
+from lib.Google import Create_Service
 
 class bot:
   CLIENT_SECRET_FILE = 'client_secrets.json'
