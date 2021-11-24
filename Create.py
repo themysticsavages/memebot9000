@@ -1,7 +1,7 @@
 from lib.Request import Reddit
 import requests
 
-def download_memes() -> None:
+def download_memes(path: str) -> None:
     '''
     Handle Reddit content
     '''
@@ -16,7 +16,7 @@ def download_memes() -> None:
 
             print(v)
             try:
-                with open('images/{}.{}'.format(id, v.rsplit('.', 1)[-1].replace('}','').replace(']','')).split('?')[0], 'wb') as f:
+                with open('{}/{}.{}'.format(path, id, v.rsplit('.', 1)[-1].replace('}','').replace(']','')).split('?')[0], 'wb') as f:
                     for chunk in req.iter_content(1024):
                         f.write(chunk)
             except FileNotFoundError:

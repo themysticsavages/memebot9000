@@ -48,6 +48,7 @@ class Reddit:
               if 'https://v.redd.it/' in i \
                 or 'https://i.redd.it' in i \
                   and not 'award_images' in i \
+                    and not 'zi1a2p511m081' in i
           ]
         )
       )
