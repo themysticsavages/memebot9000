@@ -36,10 +36,10 @@ def create_service(client_secret_file, api_name, api_version, *scopes):
 
     try:
         service = build(API_SERVICE_NAME, API_VERSION, credentials=cred)
-        print(API_SERVICE_NAME, 'service created successfully')
+        print('Service', API_SERVICE_NAME, 'created successfully')
         return service
     except Exception as e:
-        print('0_o funny9000 couldn\'t connect?!\n{}'.format(e))
+        print('\n{}'.format(e))
         return None
 
 def convert_to_RFC_datetime(year=1900, month=1, day=1, hour=0, minute=0):
