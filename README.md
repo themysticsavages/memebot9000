@@ -1,27 +1,27 @@
 # memebot9000
 An active meme bot on YouTube which uploads random memes based on internet knowledge. <br>
-I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that doesn't get as random.
+I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that d̶o̶e̶s̶n̶'̶t̶ ̶g̶e̶t̶ won't be as random.
 
-Example video:
+Meme compilation example:
 
 <a href="https://www.youtube.com/watch?v=n-1HtN4IPiE" target="blank"><img src="https://i.ytimg.com/vi/n-1HtN4IPiE/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBG5aFk-WA9YvtNYbdzMdfmXJg_qA"></a>
 
 ## How it works
 - Choose between making a meme compilation or a meme edit of a popular video (sh*tpost), or just a sound effect with effects.
-  - Traditional meme compilation
+  - [x] Traditional meme compilation
     - Take trending memes from the r/memes subreddit on Reddit
     - Download all attachments that are images or videos
     - Scan OCR on images and the first frame of a video
     - Create TTS speech from text
     - Form video with images, TTS, and background music
-  - S*hitpost
+  - [ ] S*hitpost
     - Take any popular video on YouTube
     - Randomly add
       - `what da dog doin`
       - `bruh`
       - `vine boom bass boosted`
       - `...` 
-  - Popular sound with effects
+  - [ ] Popular sound with effects
     - Take any sound effect from the YouTube channel "Gaming Sound FX"
     - Add any of the following effects:
       - `bass`
