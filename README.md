@@ -1,11 +1,10 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/ajskateboarder/stuff/main/this.png" height="150"> <br><br>
-  An active meme bot on YouTube which compiles memes, makes sh*tposts, and makes remixes of popular sounds <br>
+  <i>An active meme bot on YouTube which compiles memes, makes sh*tposts, and makes remixes of popular sounds</i> <br>
   <h1></h1>
 </div>
 
-I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that d̶o̶e̶s̶n̶'̶t̶ ̶g̶e̶t̶ won't be as random.
-
+I know [this thing](https://github.com/sakkshm/MemeBot) exists, but that d̶o̶e̶s̶n̶'̶t̶ ̶g̶e̶t̶ won't be as random. <br>
 Meme compilation example:
 
 <a href="https://www.youtube.com/watch?v=n-1HtN4IPiE" target="blank"><img src="https://i.ytimg.com/vi/n-1HtN4IPiE/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBG5aFk-WA9YvtNYbdzMdfmXJg_qA"></a>
