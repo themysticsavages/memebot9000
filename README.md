@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/ajskateboarder/stuff/main/this.png" height="150"> <br><br>
-  An active meme bot on YouTube which uploads random memes based on internet knowledge. <br>
+  An active meme bot on YouTube which compiles memes, makes sh*tposts, and makes remixes of popular sounds <br>
   <h1></h1>
 </div>
 
@@ -25,7 +25,7 @@ Meme compilation example:
       - `vine boom bass boosted`
       - `...` 
   - [ ] Popular sound with effects
-    - Take any sound effect from the YouTube channel "Gaming Sound FX"
+    - Take any sound effect from the YouTube channel ["Gaming Sound FX"](https://www.youtube.com/user/gamingsoundfx)
     - Add any of the following effects:
       - `bass`
       - `echo`
@@ -61,4 +61,9 @@ Save the following values to the respective keys in `reddit_secrets.json` in the
 }
 ```
 
-! unfinished !
+Then, simply run:
+```bash
+python3 index.py
+```
+
+The time it takes to create the video and upload it will depend on your CPU and memory configuration. On a modern Intel 4-core CPU, it will take about 10 minutes.
