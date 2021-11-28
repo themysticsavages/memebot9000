@@ -1,4 +1,4 @@
-from Request import Reddit
+from lib.Request import Reddit
 import requests
 
 def download_memes(path: str) -> None:
@@ -6,7 +6,7 @@ def download_memes(path: str) -> None:
     Handle Reddit content
     '''
 
-    videos = Reddit.pull_meme_videos(Reddit.auth('secrets/reddit_secrets.json'), 'funny9000')
+    videos = Reddit.pull_meme_videos(Reddit.auth('reddit_secrets.json'), 'funny9000')
     ids = []
 
     for v in videos:
