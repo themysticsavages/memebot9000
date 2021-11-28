@@ -11,10 +11,9 @@ Meme compilation example:
 
 ## How it works
 - Choose between making a meme compilation or a meme edit of a popular video (sh*tpost), or just a sound effect with effects.
-  - [x] Traditional meme compilation (incomplete)
+  - [x] Traditional meme compilation
     - Take trending memes from the r/memes subreddit on Reddit
-    - Download all attachments that are images or videos
-    - When using a video, the first frame is used. (not done)
+    - Download all attachments that are images or animated GIFs
     - Form video with images, and some calm background music
   - [ ] S*hitpost
     - Take any popular video on YouTube
