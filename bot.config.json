@@ -2,6 +2,6 @@
   "web" : {
     "port": 5000,
     "host": "http://localhost:5000"
-  }
+  },
   "bot_video": 1
 }
