@@ -61,7 +61,7 @@ if __name__ == '__main__':
     compile_memes('assets/default_music.mp3')
     
     count = json.load(open('bot.config.json'))
-    VideoService.post_video('memes.mp4', 'Freshly made memes #{}'.format(count['bot_video']))
+    VideoService.post_video('memes.mp4', count['web']['host'], 'Freshly made memes #{}'.format(count['bot_video']))
     
     count['bot_video'] += 1
     json.dump(count, open('bot.config.json'))
