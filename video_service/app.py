@@ -60,5 +60,3 @@ def api_post():
 def fetchv():
     fh = json.load(open('templates/api/videos.json'))
     return jsonify({'videos': fh['videos']})
-
-app.run(threaded=True)
