@@ -52,3 +52,14 @@ class Reddit:
           ]
         )
       )
+
+class VideoService:
+  '''
+  Video service stuff
+  '''
+  def post_video(f: str, t: str, host: str='http://localhost:5000') -> dict:
+    url = host+'/api/post/'
+    my_img = {'fstream': open(f, 'rb')}
+    r = requests.post(url, files=my_img, data={'title': t})
+
+    return json.loads(r.text)
