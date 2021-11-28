@@ -1,0 +1,60 @@
+html {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+h1, h2 {
+    font-weight: 1;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 25px;
+}
+.overlap a {
+    transition: ease-in 0.1s;
+    text-decoration: none;
+    color: white;
+}
+.overlap a:hover {
+    background-color: rgb(56, 56, 56, 0.5);
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(51, 51, 51, 0.5);
+    font-size: 12px;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.topnav a {
+    color: #909090;
+    text-decoration: none;
+    transition: ease-in 0.1s;
+    padding-right: 20px;
+}
+.topnav a:hover {
+    color: #ddd;
+}
+.information {
+    margin-top: 20px;
+}
+.cover {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    position: absolute;
+}
+.overlap {
+    z-index: 9;
+    margin-top: 25%;
+    background: #000000;
+    padding: 10px;
+    height: 100%;
+}

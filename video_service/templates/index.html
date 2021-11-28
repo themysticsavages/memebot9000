@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="/">
+                <img src="{{ url_for('static', filename='channel.jpg') }}" height="15" style="vertical-align: middle;"> Memebot9000 feed
+            </a>
+            <a href="about">About</a>
+        </div>
+        <div class="information">
+            <img class="cover" src="{{ url_for('static', filename='cover.png') }}" height="400">
+            <div class="cover overlap">
+                <h1>Latest video</h1>
+                <h2><a href="/watch?id=/id/">/latest/</a></h2>
+                <br><br><br><br><br>
+            </div>
+        </div>
+    </body>
+</html>
