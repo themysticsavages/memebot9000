@@ -1,4 +1,4 @@
-from lib.Request import Reddit
+from Request import Reddit
 import requests
 
 def download_memes(path: str) -> None:
