@@ -42,7 +42,7 @@ Install required pip packages:
 ```bash
 python3 -m pip install -r requirements.txt
 ```
-After that, create a Reddit application (set the type to script) under an account that wasn't created with Google or other platforms. <br>
+Create a Reddit application (set the type to script) under an account that wasn't created with Google or other platforms. <br>
 Save the following values to the respective keys in `reddit_secrets.json`:
 ```json
 {
@@ -55,4 +55,21 @@ Save the following values to the respective keys in `reddit_secrets.json`:
     }
 }
 ```
-
+Configure the `bot.config.json` file to your liking:
+```json
+{
+    "web": {
+      "port": 5000,
+      "host": "http://localhost:5000"
+    },
+    "bot_video": 1 You most likely won't need to configure this.
+}
+```
+Start the web server:
+```bash
+python3 wsgi.py &
+```
+As well as the bot:
+```bash
+python3 index.py
+```
