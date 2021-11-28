@@ -1,7 +1,7 @@
 from moviepy.video.VideoClip import ImageClip
 from moviepy.video.fx.resize import resize
 from moviepy.editor import VideoFileClip, AudioFileClip, CompositeAudioClip, concatenate
-from lib.Request import VideoService
+from Request import VideoService
 from PIL import Image
 import Create
 import os
