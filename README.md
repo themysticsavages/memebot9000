@@ -42,11 +42,8 @@ Install required pip packages:
 ```bash
 python3 -m pip install -r requirements.txt
 ```
-
-Then, create a Google Cloud app instance with the YouTube Data API v3 libary added. It is free and no credit card is needed, unless you happened to reach the project quota. Make sure to add a consent screen in order to create Oauth credentials. When you make a consent screen and finish adding Oauth credentials, make sure to download the JSON for it, and put it in the secrets directory as `client_secrets.json`.
-
 After that, create a Reddit application (set the type to script) under an account that wasn't created with Google or other platforms. <br>
-Save the following values to the respective keys in `reddit_secrets.json` in the secrets directory:
+Save the following values to the respective keys in `reddit_secrets.json`:
 ```json
 {
     "app_name": "",
@@ -59,9 +56,3 @@ Save the following values to the respective keys in `reddit_secrets.json` in the
 }
 ```
 
-Then, simply run:
-```bash
-python3 index.py
-```
-
-The time it takes to create the video and upload it will depend on your CPU and memory configuration. On a modern Intel 4-core CPU, it will take about 10 minutes.
