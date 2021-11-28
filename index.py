@@ -1,7 +1,7 @@
 from moviepy.video.VideoClip import ImageClip
 from moviepy.video.fx.resize import resize
 from moviepy.editor import VideoFileClip, AudioFileClip, CompositeAudioClip, concatenate
-from lib import Upload
+from lib.Request import VideoService
 from PIL import Image
 import Create
 import os
@@ -58,4 +58,4 @@ def compile_memes(m) -> None:
 
 if __name__ == '__main__':
     compile_memes('assets/default_music.mp3')
-    Upload.
+    VideoService.post_video('memes.mp4')
