@@ -4,6 +4,7 @@ from moviepy.editor import VideoFileClip, AudioFileClip, CompositeAudioClip, con
 from Request import VideoService
 from PIL import Image
 import Create
+import json
 import os
 
 '''
@@ -58,4 +59,9 @@ def compile_memes(m) -> None:
 
 if __name__ == '__main__':
     compile_memes('assets/default_music.mp3')
-    VideoService.post_video('memes.mp4')
+    
+    count = json.load(open('bot.config.json'))
+    VideoService.post_video('memes.mp4', 'Freshly made memes #{}'.format(count['bot_video']))
+    
+    count['bot_video'] += 1
+    json.dump(count, open('bot.config.json'))
