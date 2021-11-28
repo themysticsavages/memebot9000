@@ -1,4 +1,4 @@
-from video_service.app import app
+from app import app
 import json
 
 if __name__ == '__main__':
