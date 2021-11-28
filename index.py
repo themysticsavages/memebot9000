@@ -5,6 +5,7 @@ from Request import VideoService
 from PIL import Image
 import Create
 import json
+import time
 import os
 
 '''
@@ -58,11 +59,15 @@ def compile_memes(m) -> None:
     videoclip.write_videofile('memes.mp4')
 
 if __name__ == '__main__':
-    compile_memes('assets/default_music.mp3')
-    
-    count = json.load(open('bot.config.json'))
-    VideoService.post_video('memes.mp4', 'Freshly made memes #{}'.format(count['bot_video']), count['web']['host'])
-    
-    count['bot_video'] += 1
-    json.dump(count, open('bot.config.json', 'w'))
+    print('I\'m up now! Press Ctrl+C to kindly end the process.')
+    while True:
+        compile_memes('assets/default_music.mp3')
 
+        count = json.load(open('bot.config.json'))
+        VideoService.post_video('memes.mp4', 'Freshly made memes #{}'.format(count['bot_video']), count['web']['host'])
+        print('Freshly made memes #{} has been posted.'.format(count['bot_video']), count['web']['host']')   
+        
+        count['bot_video'] += 1
+        json.dump(count, open('bot.config.json', 'w'))
+        time.sleep(86400)
+        
