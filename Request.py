@@ -45,9 +45,12 @@ class Reddit:
           [
             i.replace('"', '').replace(',', '') \
             for i in re.findall("(?P<url>https?://[^\s]+)", res.text) \
+              # video and image urls
               if 'https://v.redd.it/' in i \
                 or 'https://i.redd.it' in i \
+                  # excludes the Wholesome Award and other stuff
                   and not 'award_images' in i \
+                    # exclude post id for the r/memes rules
                     and not 'zi1a2p511m081' in i
           ]
         )
