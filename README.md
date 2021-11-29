@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/ajskateboarder/stuff/main/this.png" height="150"> <br><br>
-  <i>An active meme bot on YouTube which compiles memes, makes sh*tposts, and makes remixes of popular sounds</i> <br>
+  <i>An active meme bot which compiles memes, makes sh*tposts, and makes remixes of popular sounds</i> <br>
   <h1></h1>
 </div>
 
