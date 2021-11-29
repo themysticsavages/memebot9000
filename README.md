@@ -29,6 +29,7 @@ Meme compilation example:
       - `echo`
       - `reverb`
       - `...`  
+- Send a POST request out to the video hosting service at `/api/post/` with the video and title as headers.
 
 This is pretty much how the whole thing will work.
 
