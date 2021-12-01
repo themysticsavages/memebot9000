@@ -31,20 +31,28 @@ class Reddit:
     else:
       return 'File doesn\'t exist'
   def pull_meme_videos(token: str, app_name: str) -> dict:
-    res = requests.get(
-      'https://oauth.reddit.com/r/memes/hot', 
-      headers=
-      {
-        **{'User-Agent': '{}/0.0.1'.format(app_name)}, **{'Authorization': f'bearer {token}'}
-      }
-    )
+    rmemes,rdankmemes = \
+      requests.get(
+        'https://oauth.reddit.com/r/memes/hot?limit=75', 
+        headers=
+        {
+          **{'User-Agent': '{}/0.0.1'.format(app_name)}, **{'Authorization': f'bearer {token}'}
+        }
+      ),
+      requests.get(
+        'https://oauth.reddit.com/r/dankmemes/hot', 
+        headers=
+        {
+          **{'User-Agent': '{}/0.0.1'.format(app_name)}, **{'Authorization': f'bearer {token}'}
+        }
+      )
 
     return \
       list(
         OrderedDict.fromkeys(
           [
             i.replace('"', '').replace(',', '') \
-            for i in re.findall("(?P<url>https?://[^\s]+)", res.text) \
+            for i in re.findall("(?P<url>https?://[^\s]+)", rmemes.text+rdankmemes.text) \
               # video and image urls
               if 'https://v.redd.it/' in i \
                 or 'https://i.redd.it' in i \
