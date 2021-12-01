@@ -31,7 +31,7 @@ class Reddit:
     else:
       return 'File doesn\'t exist'
   def pull_meme_videos(token: str, app_name: str) -> dict:
-    rmemes,rdankmemes = \
+      rmemes, rdankmemes = \
       requests.get(
         'https://oauth.reddit.com/r/memes/hot?limit=75', 
         headers=
@@ -46,8 +46,9 @@ class Reddit:
           **{'User-Agent': '{}/0.0.1'.format(app_name)}, **{'Authorization': f'bearer {token}'}
         }
       )
+      
 
-    return \
+      return \
       list(
         OrderedDict.fromkeys(
           [
