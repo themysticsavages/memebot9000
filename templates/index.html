@@ -16,9 +16,10 @@
             <div class="cover overlap">
                 <h1>Recent videos</h1>
                 <h2>
-                    <a href="/watch?id=/id/">/latest/</a> <br>
-                    <a href="/watch?id=/id0/" style="color: #909090;">/latest0/</a> <br>
-                    <a href="/watch?id=/id1/" style="color: #808080;">/latest1/</a> <br>
+                    {% set datetime = use('datetime') %}
+                    {%for i in range(l)%}
+                        <a href='/watch?id={{videos[i][0]}}'>{{videos[i][1]}} | {{datetime.datetime.fromtimestamp(videos[i][2]).strftime('%m/%d/%Y')}}</a> <br>
+                    {%endfor%}
                 </h2>
                 <br><br><br><br><br>
             </div>

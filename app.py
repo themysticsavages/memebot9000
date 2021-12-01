@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template, jsonify, send_file, abort
+from importlib import import_module
 from datetime import datetime
 import requests
 import random
@@ -16,13 +17,7 @@ def index():
     video = json.loads(requests.get(request.host_url+'/api/fetchv/').text)
     latest = video['videos']
 
-    return render_template('index.html') \
-        .replace('/latest/', str(latest[-1][1]+' | '+datetime.fromtimestamp(latest[-1][2]).strftime('%m/%d/%Y'))) \
-        .replace('/id/', latest[-1][0]) \
-            .replace('/latest0/', str(latest[-2][1]+' | '+datetime.fromtimestamp(latest[-2][2]).strftime('%m/%d/%Y'))) \
-            .replace('/id0/', latest[-2][0]) \
-                .replace('/latest1/', str(latest[-3][1]+' | '+datetime.fromtimestamp(latest[-3][2]).strftime('%m/%d/%Y'))) \
-                .replace('/id1/', latest[-3][0])
+    return render_template('index.html', l=len(latest), videos=latest, use=import_module)
 
 @app.get('/about/')
 def about():
